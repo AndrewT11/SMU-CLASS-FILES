@@ -5,7 +5,7 @@ function getApi() {
   var requestUrl = 'https://api.github.com/repos/IBM/clai/issues?per_page=5';
 
   fetch(requestUrl)
-    .then(function (response) {
+    .then(function (response) { //promise
       return response.json();
     })
     .then(function (data) {
